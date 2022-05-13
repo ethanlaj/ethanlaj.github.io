@@ -1,8 +1,6 @@
 ---
-permalink: /
 ---
-
-{ % include navbar.html position="top" % }
+{% include navbar.html %}
 
 <body>
   <h1>Hi, my name is Ethan Lajeunesse</h1>
@@ -10,25 +8,36 @@ permalink: /
     I am a 2nd-year Computer Science student at Elizabethtown College.
   </p>
 
-  <h1>Here are some projects I have created/worked on:</h1>
-
-  <div>
-    <ul>
-      <li>
-        <a href="Projects/amazon-affiliate-bot/amazon-affiliate-bot.html">
-          Amazon Affiliate Bot - Personal Project
-        </a>
-      </li>
-      <li hidden>
-        <a href="Projects/resell-bot.html">
-          Resell Bot - Personal Project
-        </a>
-      </li>
-      <li>
-        <a href="Projects/checkout-system/checkout-system.html">
-          Checkout System - Elizabethtown College
-        </a>
-      </li>
-    </ul>
+  <div class="flex">
+    <a class="homebtn" href="/projects.html">Projects</a>
+    <a class="homebtn" href="/idk.html">IDK Yet</a>
+    <a class="homebtn" href="/about.html">About Me</a>
   </div>
 </body>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .homebtn {
+    background-color: #1A1A1B;
+    border-radius: 50%;
+    border: none;
+    height: 25rem;
+    width: 25rem;
+    text-align: center;
+    line-height: 25rem;
+    font-size: 4rem;
+    text-decoration: none;
+    color: #94F3E4;
+  }
+
+  .homebtn:hover {
+    background-color: #ddd;
+    color: black;
+  }
+</style>
