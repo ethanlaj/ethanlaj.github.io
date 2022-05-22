@@ -3,41 +3,71 @@
 {% include navbar.html %}
 
 <body>
-  <div class="flex-column">
-    <h1>Project List</h1>
+  <h1 style="text-align: center;">Project List</h1>
 
-    <div class="flex-column">
-      <a class="btn" href="/Projects/checkout-system/checkout-system.html">Checkout System - Elizabethtown College</a>
-      <a class="btn" href="/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html">Amazon Affiliate Bot - Personal Project</a>
-      <a class="btn" href="/Projects/resell-bot.html">Resell Bot - Personal Project</a>
-    </div>
-  </div>
-  
+  <h2>Client Work</h2>
+  <table class="project-table">
+    <tr>
+      <td>
+        <a href="/Projects/checkout-system/checkout-system.html">
+          <button class = "btn" type="button" >
+            <p>Checkout System</p>
+            <p>Elizabethtown College</p>
+            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />      
+          </td>
+        </a>
+    </tr>
+  </table>
+
+  <h2>Personal Projects</h2>
+  <table class="project-table">
+    <tr>
+      <td>
+        <a href="/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html">
+          <button class = "btn" type="button" >
+            Amazon Affiliate Bot
+          </button>
+        </a>
+      
+      </td>
+      <td>
+        <a href="/Projects/resell-bot.html">
+          <button class = "btn" type="button" >
+            Resell Bot
+          </button>
+        </a>
+      </td>
+    </tr>
+  </table>
 </body>
 
 <link rel="stylesheet" href="styles.css">
-
+          
 <style>
   body {
     font-size: 30px;
   }
 
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .project-table {
+    border-spacing: 10px;
+    border-collapse: separate;
   }
   
+  .icon {
+    width: 75px;
+    height: 75px;
+  }
+
   .btn {
     background-color: #1A1A1B;
-    margin: 12px 100px;
-    padding: 5px 5px;
     border: solid;
     border-color: #37AA9C;
     text-align: center;
     font-size: 2rem;
-    text-decoration: none;
     color: #94F3E4;
+    width: 400px;
+    height: 500px;
   }
 
   .btn:hover {
