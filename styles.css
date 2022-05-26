@@ -1,9 +1,12 @@
 body {
-    background-color: #333F44;
-    color: #94F3E4;
-    font-family: 'Trebuchet MS';
+  font-family: Helvetica;
+  margin: 0;
+}
+
+.padded {
+  padding: 0 15%;
 }
 
 .btn {
-    font-family: 'Trebuchet MS';
+  font-family: Helvetica;
 }

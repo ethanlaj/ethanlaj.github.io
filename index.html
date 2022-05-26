@@ -1,44 +1,28 @@
 ---
 ---
-{% include navbar.html %}
+
+{% include navbar.html %} {% include header.html %}
 
 <body>
-  <div class="flex-column">
-    <h1>Hi, my name is Ethan Lajeunesse</h1>
-    <p>
-      I am a 2nd-year Computer Science student at Elizabethtown College.
-    </p>
-  
-    <div class="flex">
-      <a class="homebtn" href="/projects.html">Projects</a>
-      <a class="homebtn" href="/education.html">Education</a>
-      <a class="homebtn" href="/about.html">About Me</a>
+  <div class="padded">
+    <div class="flex-column">
+      <p>I am a 2nd-year Computer Science student at Elizabethtown College.</p>
+
+      <h2>About Me</h2>
     </div>
   </div>
-  
 </body>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css" />
 
 <style>
-  body {
-    font-size: 30px;
-  }
-
-  .flex {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 75px;
-  }
-
   .flex-column {
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
-  
+
   .homebtn {
-    background-color: #1A1A1B;
+    background-color: #1a1a1b;
     border-radius: 50%;
     border: none;
     height: 20rem;
@@ -47,7 +31,7 @@
     line-height: 20rem;
     font-size: 3rem;
     text-decoration: none;
-    color: #94F3E4;
+    color: #94f3e4;
   }
 
   .homebtn:hover {

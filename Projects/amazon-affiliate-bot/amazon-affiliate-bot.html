@@ -1,79 +1,63 @@
 ---
 ---
+
 {% include navbar.html %}
 
 <body>
+  <div class="padded">
     <h1>Amazon Affiliate Bot</h1>
-    <p>
-        The Amazon Affiliate Bot was created using Node.js runtime and the npm package Puppeteer.
-        When I became an affiliate for Amazon, I thought about automating the work I was doing, which
-        involved going to the affiliate website, pulling product promotion details, then posting the promotions on a Facebook group.
-    </p>
-    <p>
-        The bot is running on a Raspberry Pi between 6am and 12am, allowing me to earn passive income.
-        The bot posts a deal every 3-4 minutes to prevent being flagged by Facebook for using a bot.
-    </p>
-    <h4>
-        Throughout this project I gained experience in:
-    </h4>
+    <p>The Amazon Affiliate Bot was created using Node.js runtime and the npm package Puppeteer. When I became an affiliate for Amazon, I thought about automating the work I was doing, which involved going to the affiliate website, pulling product promotion details, then posting the promotions on a Facebook group.</p>
+    <p>The bot is running on a Raspberry Pi between 6am and 12am, allowing me to earn passive income. The bot posts a deal every 3-4 minutes to prevent being flagged by Facebook for using a bot.</p>
+    <h4>Throughout this project I gained experience in:</h4>
     <ul>
-        <li>JavaScript</li>
-        <li>Node.js</li>
-        <li>Puppeteer and other npm packages</li>
-        <li>Web Scraping</li>
+      <li>JavaScript</li>
+      <li>Node.js</li>
+      <li>Puppeteer and other npm packages</li>
+      <li>Web Scraping</li>
     </ul>
 
-    <h2>
-        Passive Income Earned in 90 Days:
-    </h2>
-    <img src="media/success.png"/>
+    <h2>Passive Income Earned in 90 Days:</h2>
+    <img src="media/success.png" />
 
-    <h2>
-        How It Works:
-    </h2>
+    <h2>How It Works:</h2>
     <ol>
-        <li>
-            <p>Initial Startup and Amazon Login:</p>
-            <video controls>
-                <source src="media/startup.mp4" type="video/mp4">
-                <source src="media/startup.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
-        </li>
-        <li>
-            <p>Scraping Deal Data:</p>
-            <video controls>
-                <source src="media/scrape.mp4" type="video/mp4">
-                <source src="media/scrape.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
-        </li>
-        <li>
-            <p>Posting Deal:</p>
-            <video controls>
-                <source src="media/post.mp4" type="video/mp4">
-                <source src="media/post.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
-        </li>
+      <li>
+        <p>Initial Startup and Amazon Login:</p>
+        <video controls>
+          <source src="media/startup.mp4" type="video/mp4" />
+          <source src="media/startup.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li>
+        <p>Scraping Deal Data:</p>
+        <video controls>
+          <source src="media/scrape.mp4" type="video/mp4" />
+          <source src="media/scrape.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li>
+        <p>Posting Deal:</p>
+        <video controls>
+          <source src="media/post.mp4" type="video/mp4" />
+          <source src="media/post.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </li>
     </ol>
+  </div>
 </body>
 
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css" />
 
 <style>
-    video { 
-        max-width: 1000px; 
-        max-height: 800px;
-        border: solid;
-        border-color: lightgray;
-        border-width: 5px;
-    }
-    img { 
-        max-width: 1000px; 
-        max-height: 800px;
-        border: solid;
-        border-color: lightgray;
-        border-width: 5px;
-    }
+  img,
+  video {
+    max-width: 1000px;
+    max-height: 800px;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+  }
 </style>
