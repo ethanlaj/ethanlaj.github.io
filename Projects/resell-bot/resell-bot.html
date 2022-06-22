@@ -1,0 +1,40 @@
+---
+---
+
+{% include navbar.html %}
+
+<body>
+    <div class="padded">
+        <h1>Resell Bot</h1>
+        <p>The Resell Bot was created to use Node.js runtime. As a Walmart employee and a sports card reseller, I was looking for ways to earn (passive) income. This bot would have allowed me to find resellable products sold by Walmart and sell that information to others. However, once I thought I finished the bot I encountered problems including API limitations and a lack of interest from possible customers.</p>
+        <p>This bot worked by taking data from the Ebay and Walmart APIs, matching the UPCs of listings from Ebay with Walmart products, and comparing the prices. If an Ebay listing's price was higher, it would notify users in a Discord server about a possible resellable item.</p>
+
+        <h4>Throughout this project I gained experience in:</h4>
+        <ul>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Npm packages</li>
+            <li>APIs</li>
+            <li>Web Scraping</li>
+        </ul>
+
+        <h2>Alert Example:</h2>
+        <img src="./media/alert.png" />
+        <h2>Ebay Listing</h2>
+        <img src="./media/ebay.png" />
+        <h2>Walmart Listing</h2>
+        <img src="./media/walmart.png" />
+    </div>
+</body>
+
+<link rel="stylesheet" href="/styles.css" />
+
+<style>
+    img {
+        max-width: 800px;
+        max-height: 500px;
+        border: solid;
+        border-color: black;
+        border-width: 2px;
+    }
+</style>

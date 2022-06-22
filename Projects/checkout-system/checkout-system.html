@@ -4,93 +4,93 @@
 {% include navbar.html %}
 
 <body>
-  <div class="padded">
-    <h1>Checkout System</h1>
-    <p>The Checkout System is an ASP.NET Core Web App MVC using Entity Framework. I was tasked with getting the initially broken system up and running and adding more features that were requested by the client.</p>
-    <p>The system is mainly ran on a touchscreen computer that has a 2D barcode and prox ID card scanners connected to it. Each asset should have a 2D barcode attached to it that a user can scan to check it in/out.</p>
-    <h4>Throughout this project I gained experience in:</h4>
-    <ul>
-      <li>C#</li>
-      <li>JavaScript</li>
-      <li>HTML & CSS</li>
-      <li>SQL & SQL Servers</li>
-      <li>ASP.NET Core</li>
-      <li>.NET 5</li>
-      <li>MVC Models</li>
-      <li>Entity Core Framework</li>
-      <li>Active Directory</li>
-      <li>Subversion Client - TortoiseSVN</li>
-      <li>FTP Server Publishing</li>
-      <li>Cookies</li>
-    </ul>
+    <div class="padded">
+        <h1>Checkout System</h1>
+        <p>The Checkout System is an ASP.NET Core Web App MVC using Entity Framework. I was tasked with getting the initially broken system up and running and adding more features that were requested by the client.</p>
+        <p>The system is mainly ran on a touchscreen computer that has a 2D barcode and prox ID card scanners connected to it. Each asset should have a 2D barcode attached to it that a user can scan to check it in/out.</p>
+        <h4>Throughout this project I gained experience in:</h4>
+        <ul>
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>SQL & SQL Servers</li>
+            <li>ASP.NET Core</li>
+            <li>.NET 5</li>
+            <li>MVC Models</li>
+            <li>Entity Core Framework</li>
+            <li>Active Directory</li>
+            <li>Subversion Client - TortoiseSVN</li>
+            <li>FTP Server Publishing</li>
+            <li>Cookies</li>
+        </ul>
 
-    <h2>Selected Additions & Fixes:</h2>
-    <ol>
-      <li>
-        Checking In & Out Assets:
-        <ul>
-          <li>Enabled fields only once the previous ones have been filled out.</li>
-          <li>Added an authorizing user field to record which staff member checked in and out an item.</li>
-          <li>Showing comments for assets that have comments stored in the Assets table</li>
-          <li>Added the ability to check-in and checkout multiple items at a time.</li>
-          <img src="media/checkout-screen.png" />
-        </ul>
-      </li>
-      <li>
-        Creating Assets:
-        <ul>
-          <li>Implemented a random barcode generator onto the creation form.</li>
-          <img style="height: 25%" src="media/random-barcode-gen.gif" />
-        </ul>
-      </li>
-      <li>
-        Deleting/Disabling Assets:
-        <ul>
-          <li>Added the ability to delete and disable assets.</li>
-          <img src="media/delete-asset.png" />
-        </ul>
-      </li>
-      <li>
-        Role Management:
-        <ul>
-          <li>Added the ability to add admins and non-admins into the Roles database.</li>
-          <li>Ensured that only admins are able to manage assets and roles, and non-admins are only able to authorize checkout/checkin transactions.</li>
-          <img src="media/role-createmultiple.png" />
-        </ul>
-      </li>
-      <li>
-        Inventory:
-        <ul>
-          <li>Created a way to scan all items to ensure that assets are not missing or lost.</li>
-          <img src="media/startInventory.png" />
-          <li>This included generating a report at the end that is able to be reviewed by a supervisor.</li>
-          <img src="media/generatedReport.png" />
-        </ul>
-      </li>
-      <li>
-        Reports:
-        <ul>
-          <li>Overdue Report</li>
-          <img src="media/overdue.png" />
-          <li>Lifetime Loan Report</li>
-          <img src="media/lifetime.png" />
-          <li>Asset Checkout Frequency Report</li>
-          <img src="media/frequentCheckouts.png" />
-        </ul>
-      </li>
-    </ol>
-  </div>
+        <h2>Selected Additions & Fixes:</h2>
+        <ol>
+            <li>
+                Checking In & Out Assets:
+                <ul>
+                    <li>Enabled fields only once the previous ones have been filled out.</li>
+                    <li>Added an authorizing user field to record which staff member checked in and out an item.</li>
+                    <li>Showing comments for assets that have comments stored in the Assets table</li>
+                    <li>Added the ability to check-in and checkout multiple items at a time.</li>
+                    <img src="media/checkout-screen.png" />
+                </ul>
+            </li>
+            <li>
+                Creating Assets:
+                <ul>
+                    <li>Implemented a random barcode generator onto the creation form.</li>
+                    <img style="height: 25%" src="media/random-barcode-gen.gif" />
+                </ul>
+            </li>
+            <li>
+                Deleting/Disabling Assets:
+                <ul>
+                    <li>Added the ability to delete and disable assets.</li>
+                    <img src="media/delete-asset.png" />
+                </ul>
+            </li>
+            <li>
+                Role Management:
+                <ul>
+                    <li>Added the ability to add admins and non-admins into the Roles database.</li>
+                    <li>Ensured that only admins are able to manage assets and roles, and non-admins are only able to authorize checkout/checkin transactions.</li>
+                    <img src="media/role-createmultiple.png" />
+                </ul>
+            </li>
+            <li>
+                Inventory:
+                <ul>
+                    <li>Created a way to scan all items to ensure that assets are not missing or lost.</li>
+                    <img src="media/startInventory.png" />
+                    <li>This included generating a report at the end that is able to be reviewed by a supervisor.</li>
+                    <img src="media/generatedReport.png" />
+                </ul>
+            </li>
+            <li>
+                Reports:
+                <ul>
+                    <li>Overdue Report</li>
+                    <img src="media/overdue.png" />
+                    <li>Lifetime Loan Report</li>
+                    <img src="media/lifetime.png" />
+                    <li>Asset Checkout Frequency Report</li>
+                    <img src="media/frequentCheckouts.png" />
+                </ul>
+            </li>
+        </ol>
+    </div>
 </body>
 
 <link rel="stylesheet" href="/styles.css" />
 
 <style>
-  img {
-    max-width: 800px;
-    max-height: 500px;
-    border: solid;
-    border-color: black;
-    border-width: 2px;
-    margin: 15px;
-  }
+    img {
+        max-width: 800px;
+        max-height: 500px;
+        border: solid;
+        border-color: black;
+        border-width: 2px;
+        margin: 15px 0 15px 0;
+    }
 </style>

@@ -4,71 +4,83 @@
 {% include navbar.html %} {% include header.html %}
 
 <body>
-  <div class="padded">
-    <h1>Project List</h1>
+    <div class="padded">
+        <h1>Project List</h1>
 
-    <div id="projects">
-      <div class="project-box" id="checkout-system">
-        <p>Checkout System</p>
-        <a href="/Projects/checkout-system/checkout-system.html">View</a>
-        <p>Elizabethtown College</p>
-        <div class="icons">
-          <img src="global-media/csharp-original.svg" />
-          <img src="global-media/javascript-plain.svg" />
-          <img src="global-media/dotnetcore-original.svg" />
-          <img src="global-media/microsoftsqlserver-plain-wordmark.svg" />
+        <div id="projects">
+            <div class="project-box" id="checkout-system">
+                <p>Checkout System</p>
+                <a href="/Projects/checkout-system/checkout-system.html">Details</a>
+                <p>Elizabethtown College</p>
+                <div class="icons">
+                    <img src="global-media/csharp-original.svg" />
+                    <img src="global-media/javascript-plain.svg" />
+                    <img src="global-media/dotnetcore-original.svg" />
+                    <img src="global-media/microsoftsqlserver-plain-wordmark.svg" />
+                </div>
+            </div>
+            <div class="project-box" id="amazon-affiliate-bot">
+                <p>Amazon Affiliate Bot</p>
+                <div class="flexbox">
+                    <a href="/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html">Details</a>
+                    <div style="margin: 0 5px 0 5px"></div>
+                    <a href="https://github.com/ethanlaj/amazon-affiliate">Github</a>
+                </div>
+                <div class="icons">
+                    <img src="global-media/javascript-plain.svg" />
+                    <img src="global-media/nodejs-plain.svg" />
+                    <img src="global-media/npm-original-wordmark.svg" />
+                </div>
+            </div>
+            <div class="project-box" id="resell-bot">
+                <p>Resell Bot</p>
+                <div class="flexbox">
+                    <a href="/Projects/resell-bot/resell-bot.html">Details</a>
+                    <div style="margin: 0 5px 0 5px"></div>
+                    <a href="https://github.com/ethanlaj/resell-bot">Github</a>
+                </div>
+                <div class="icons">
+                    <img src="global-media/javascript-plain.svg" />
+                    <img src="global-media/nodejs-plain.svg" />
+                    <img src="global-media/npm-original-wordmark.svg" />
+                    <img src="global-media/heroku-plain-wordmark.svg" />
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="project-box" id="amazon-affiliate-bot">
-        <p>Amazon Affiliate Bot</p>
-        <a href="/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html">View</a>
-        <div class="icons">
-          <img src="global-media/javascript-plain.svg" />
-          <img src="global-media/nodejs-plain.svg" />
-          <img src="global-media/npm-original-wordmark.svg" />
-        </div>
-      </div>
-      <div class="project-box" id="resell-bot">
-        <p>Resell Bot</p>
-        <a href="/Projects/resell-bot.html">View</a>
-        <div class="icons">
-          <img src="global-media/javascript-plain.svg" />
-          <img src="global-media/nodejs-plain.svg" />
-          <img src="global-media/npm-original-wordmark.svg" />
-          <img src="global-media/heroku-plain-wordmark.svg" />
-        </div>
-      </div>
     </div>
-  </div>
 </body>
 
 <link rel="stylesheet" href="styles.css" />
 
 <style>
-  #projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 40px;
-    justify-items: center;
-  }
-  .project-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid;
-    border-width: 2px;
-    border-color: black;
-    width: 200px;
-    height: 200px;
-  }
-  .icons {
-    margin-top: auto;
-    margin-bottom: 5px;
-    display: flex;
-  }
-  .project-box img {
-    width: 30px;
-    height: 30px;
-    margin: 0 2px 0 2px;
-  }
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-top: 40px;
+        justify-items: center;
+    }
+    .project-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid;
+        border-width: 2px;
+        border-color: black;
+        width: 200px;
+        height: 200px;
+    }
+    .flexbox {
+        display: flex;
+        justify-content: center;
+    }
+    .icons {
+        margin-top: auto;
+        margin-bottom: 5px;
+        display: flex;
+    }
+    .project-box img {
+        width: 30px;
+        height: 30px;
+        margin: 0 2px 0 2px;
+    }
 </style>
