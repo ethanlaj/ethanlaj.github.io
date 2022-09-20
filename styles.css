@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -8,5 +8,10 @@ body {
 }
 
 .btn {
-  font-family: Helvetica;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #222222;
+  color: white;
 }

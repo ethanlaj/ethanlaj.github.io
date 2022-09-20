@@ -8,37 +8,41 @@
         <h1>Project List</h1>
 
         <div id="projects">
-            <div class="project-box" id="checkout-system">
+            <div class="project-box" 
+            id="checkout-system"
+            onclick="openProject(this)"
+            href="/Projects/checkout-system/checkout-system.html">
                 <p>Checkout System</p>
-                <a href="/Projects/checkout-system/checkout-system.html">Details</a>
                 <p>Elizabethtown College</p>
                 <div class="icons">
                     <img src="global-media/csharp-original.svg" />
                     <img src="global-media/javascript-plain.svg" />
                     <img src="global-media/dotnetcore-original.svg" />
-                    <img src="global-media/microsoftsqlserver-plain-wordmark.svg" />
+                    <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
                 </div>
             </div>
-            <div class="project-box" id="amazon-affiliate-bot">
+            <div class="project-box" 
+            id="amazon-affiliate-bot"
+            onclick="openProject(this)"
+            href="/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html">
                 <p>Amazon Affiliate Bot</p>
-                <div class="flexbox">
-                    <a href="/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html">Details</a>
-                    <div style="margin: 0 5px 0 5px"></div>
-                    <!--<a href="https://github.com/ethanlaj/amazon-affiliate" target="_blank">Github</a>-->
-                </div>
+                <p>Personal Project</p>
+                <a class="github" name="github" href="https://github.com/ethanlaj/amazon-affiliate" target="_blank"><i class="devicon-github-original" hover="document.getElementByID('amazon-affiliate-bot').disabled = true"></i></a>
+
                 <div class="icons">
                     <img src="global-media/javascript-plain.svg" />
                     <img src="global-media/nodejs-plain.svg" />
                     <img src="global-media/npm-original-wordmark.svg" />
                 </div>
             </div>
-            <div class="project-box" id="resell-bot">
+            <div class="project-box" 
+            id="resell-bot"
+            onclick="openProject(this)"
+            href="/Projects/resell-bot/resell-bot.html">
                 <p>Resell Bot</p>
-                <div class="flexbox">
-                    <a href="/Projects/resell-bot/resell-bot.html">Details</a>
-                    <div style="margin: 0 5px 0 5px"></div>
-                    <a href="https://github.com/ethanlaj/resell-bot" target="_blank">Github</a>
-                </div>
+                <p>Personal Project</p>
+                <a class="github" name="github" href="https://github.com/ethanlaj/amazon-affiliate" target="_blank"><i class="devicon-github-original"></i></a>
+
                 <div class="icons">
                     <img src="global-media/javascript-plain.svg" />
                     <img src="global-media/nodejs-plain.svg" />
@@ -51,6 +55,7 @@
 </body>
 
 <link rel="stylesheet" href="styles.css" />
+
 
 <style>
     #projects {
@@ -65,10 +70,21 @@
         align-items: center;
         border: solid;
         border-width: 2px;
-        border-color: black;
+        border-radius: 10%;
+        border-color: white;
         width: 200px;
         height: 200px;
     }
+
+    .project-box:hover {
+        background-color: #3b3b3b;
+        cursor: pointer;
+    }
+
+    .project-box p {
+        margin-bottom: 0;
+    }
+
     .flexbox {
         display: flex;
         justify-content: center;
@@ -78,9 +94,20 @@
         margin-bottom: 5px;
         display: flex;
     }
-    .project-box img {
+    .project-box img, .project-box i {
         width: 30px;
         height: 30px;
+        font-size: 30px;
         margin: 0 2px 0 2px;
     }
 </style>
+
+<script>
+    function openProject(element) {
+        let githubButton = element.children.namedItem("github");
+        console.log(githubButton);
+
+        if (!githubButton || !githubButton.matches(':hover'))
+            window.location = element.attributes.href.value;
+    }
+</script>
