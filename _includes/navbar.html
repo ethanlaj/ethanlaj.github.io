@@ -10,19 +10,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
 
 <div hidden class="navbar">
-  <a class="active" href="/">Home</a>
-  <a href="/projects.html">Projects</a>
-  <a href="/education.html">Education</a>
+  <a href="/">Projects</a>
+  <a hidden href="/">Home</a>
+  <a hidden href="/projects.html">Projects</a>
+  <a hidden href="/education.html">Education</a>
 </div>
 
 <style>
   .navbar {
     background-color: #000000;
     overflow: hidden;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     box-shadow: -1px 3px 13px -3px #696969;
-    margin: 0;
+    margin-bottom: 1rem;
     padding: 0;
   }
   .navbar a {

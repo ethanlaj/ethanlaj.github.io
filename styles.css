@@ -15,3 +15,7 @@ body {
   background-color: #222222;
   color: white;
 }
+
+.breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.848);
+}

@@ -5,6 +5,12 @@
 
 <body>
     <div class="padded">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Project List</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Resell Bot</li>
+            </ol>
+        </nav>
         <h1>Resell Bot</h1>
         <p>The Resell Bot was created to use Node.js runtime. As a Walmart employee and a sports card reseller, I was looking for ways to earn side hustle income. This bot would have allowed me to find resellable products sold by Walmart and sell that information to others. However, once I finished the bot I encountered problems including API limitations and a lack of interest from others.</p>
         <p>This bot works by taking data from the Ebay and Walmart APIs, matching the UPCs of listings from Ebay with Walmart products, and comparing the prices. If an Ebay listing's price was higher, it would notify users in a Discord server about a possible resellable item.</p>
