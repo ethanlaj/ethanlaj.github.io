@@ -1,113 +1,70 @@
----
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
 
-{% include navbar.html %} {% include header.html %}
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/projects.css">
+    
+    <script src="js/global.js"></script>
+    <script src="js/projects.js"></script>
+</head>
 
 <body>
+    <nav id="navbar"></nav>
+    <header id="header"></header>
+
     <div class="padded">
         <h1>Project List</h1>
 
         <div id="projects">
-            <div class="project-box" 
-            id="checkout-system"
-            onclick="openProject(this)"
-            href="/Projects/checkout-system/checkout-system.html">
+            <div class="project-box" id="checkout-system">
                 <p>Checkout System</p>
                 <p>Elizabethtown College</p>
                 <div class="icons">
-                    <img src="global-media/csharp-original.svg" />
-                    <img src="global-media/javascript-plain.svg" />
-                    <img src="global-media/dotnetcore-original.svg" />
+                    <img src="global-media/csharp-original.svg" alt="csharp">
+                    <img src="global-media/javascript-plain.svg" alt="javascript">
+                    <img src="global-media/dotnetcore-original.svg" alt="dotnetcore">
                     <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
                 </div>
             </div>
-            <div class="project-box" 
-            id="amazon-affiliate-bot"
-            onclick="openProject(this)"
-            href="/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html">
+            <div class="project-box" id="amazon-affiliate-bot">
                 <p>Amazon Affiliate Bot</p>
                 <p>Personal Project</p>
-                <a class="github" name="github" href="https://github.com/ethanlaj/amazon-affiliate" target="_blank"><i class="devicon-github-original" hover="document.getElementByID('amazon-affiliate-bot').disabled = true"></i></a>
+                <a class="github" href="https://github.com/ethanlaj/amazon-affiliate" target="_blank"><i class="devicon-github-original"></i></a>
 
                 <div class="icons">
-                    <img src="global-media/javascript-plain.svg" />
-                    <img src="global-media/nodejs-plain.svg" />
-                    <img src="global-media/npm-original-wordmark.svg" />
+                    <img src="global-media/javascript-plain.svg" alt="javascript">
+                    <img src="global-media/nodejs-plain.svg" alt="nodejs">
+                    <img src="global-media/npm-original-wordmark.svg" alt="npm">
                 </div>
             </div>
-            <div class="project-box" 
-            id="resell-bot"
-            onclick="openProject(this)"
-            href="/Projects/resell-bot/resell-bot.html">
+            <div class="project-box" id="resell-bot">
                 <p>Resell Bot</p>
                 <p>Personal Project</p>
-                <a class="github" name="github" href="https://github.com/ethanlaj/amazon-affiliate" target="_blank"><i class="devicon-github-original"></i></a>
+                <a class="github" href="https://github.com/ethanlaj/amazon-affiliate" target="_blank"><i class="devicon-github-original"></i></a>
 
                 <div class="icons">
-                    <img src="global-media/javascript-plain.svg" />
-                    <img src="global-media/nodejs-plain.svg" />
-                    <img src="global-media/npm-original-wordmark.svg" />
-                    <img src="global-media/heroku-plain-wordmark.svg" />
+                    <img src="global-media/javascript-plain.svg" alt="javascript">
+                    <img src="global-media/nodejs-plain.svg" alt="nodejs">
+                    <img src="global-media/npm-original-wordmark.svg" alt="npm">
+                    <img src="global-media/heroku-plain-wordmark.svg" alt="heroku">
                 </div>
             </div>
         </div>
     </div>
 </body>
-
-<link rel="stylesheet" href="styles.css" />
-
-
-<style>
-    #projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        margin-top: 40px;
-        justify-items: center;
-    }
-    .project-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: solid;
-        border-width: 2px;
-        border-radius: 10%;
-        border-color: white;
-        width: 200px;
-        height: 200px;
-    }
-
-    .project-box:hover {
-        background-color: #3b3b3b;
-        cursor: pointer;
-    }
-
-    .project-box p {
-        margin-bottom: 0;
-    }
-
-    .flexbox {
-        display: flex;
-        justify-content: center;
-    }
-    .icons {
-        margin-top: auto;
-        margin-bottom: 5px;
-        display: flex;
-    }
-    .project-box img, .project-box i {
-        width: 30px;
-        height: 30px;
-        font-size: 30px;
-        margin: 0 2px 0 2px;
-    }
-</style>
-
-<script>
-    function openProject(element) {
-        let githubButton = element.children.namedItem("github");
-        console.log(githubButton);
-
-        if (!githubButton || !githubButton.matches(':hover'))
-            window.location = element.attributes.href.value;
-    }
-</script>
+</html>

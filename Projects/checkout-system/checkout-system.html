@@ -1,7 +1,26 @@
----
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout System</title>
 
-{% include navbar.html %}
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/global.css">
+	<link rel="stylesheet" href="../../css/project.css">
+    
+    <script src="../../js/global.js"></script>
+</head>
 
 <body>
 	<div class="padded">
@@ -17,12 +36,12 @@
 		<h4>Throughout this project I gained experience in:</h4>
 		<ul>
 			<li>C#</li>
+			<li>ASP.NET Core</li>
+			<li>.NET 5</li>
+			<li>MVC</li>
 			<li>JavaScript</li>
 			<li>HTML & CSS</li>
 			<li>SQL & SQL Servers</li>
-			<li>ASP.NET Core</li>
-			<li>.NET 5</li>
-			<li>MVC Models</li>
 			<li>Entity Core Framework</li>
 			<li>Active Directory</li>
 			<li>Subversion Client - TortoiseSVN</li>
@@ -39,66 +58,78 @@
 					<li>Added the ability to check-in and checkout multiple items at a time.</li>
 					<li>Enabled fields only once the previous ones have been filled out.</li>
 					<li>Added an authorizing user field to record which staff member approved the checking in and out of an item.</li>
-					<li>Showing comments for assets that have comments stored in the Assets table</li>
-					<img src="media/checkout-screen.png" />
+					<li>
+						<p>Showing comments for assets that have comments stored in the Assets table</p>
+						<img class="img-fluid" src="media/checkout-screen.png" alt="Checkout Screen">
+					</li>
+					
 				</ul>
 			</li>
 			<li>
 				Creating Assets:
 				<ul>
 					<li>Fixed a bug that prevented assets from being created.</li>
-					<li>Implemented a random barcode generator onto the creation form.</li>
-					<img style="height: 25%" src="media/random-barcode-gen.gif" />
+					<li>
+						<p>Implemented a random barcode generator onto the creation form.</p>
+						<img class="img-fluid" style="max-width: 350px;" src="media/random-barcode-gen.gif" alt="Random Barcode Generator">
+					</li>
 				</ul>
 			</li>
 			<li>
 				Deleting/Disabling Assets:
 				<ul>
-					<li>Added the ability to delete and disable assets.</li>
-					<img src="media/delete-asset.png" />
+					<li>
+						<p>Added the ability to delete and disable assets.</p>
+						<img class="img-fluid" style="max-height: 500px;" src="media/delete-asset.png" alt="Delete Asset">
+					</li>
 				</ul>
 			</li>
 			<li>
 				Role Management:
 				<ul>
 					<li>Added the ability to add admins and non-admins into the Roles database.</li>
-					<li>Ensured that only admins are able to manage assets and roles, and non-admins are only able to authorize checkout/checkin transactions.</li>
-					<img src="media/role-createmultiple.png" />
+					<li>
+						<p>Ensured that only admins are able to manage assets and roles, and non-admins are only able to authorize checkout/checkin transactions.</p>
+						<img class="img-fluid" src="media/role-createmultiple.png" alt="Role Create Multiple">
+					</li>
 				</ul>
 			</li>
 			<li>
 				Inventory:
 				<ul>
-					<li>Created a way to scan all items to ensure that assets are not missing or lost.</li>
-					<img src="media/startInventory.png" />
-					<li>This included generating a report at the end that is able to be reviewed by a supervisor.</li>
-					<img src="media/generatedReport.png" />
+					<li>
+						<p>Created a way to scan all items to ensure that assets are not missing or lost.</p>
+						<img class="img-fluid" src="media/startInventory.png" alt="Start Inventory">
+					</li>
+					<li>
+						<p>This included generating a report at the end that is able to be reviewed by a supervisor.</p>
+						<img class="img-fluid" src="media/generatedReport.png" alt="Generated Report">
+					</li>
 				</ul>
 			</li>
 			<li>
 				Reports:
 				<ul>
-					<li>Overdue Report</li>
-					<img src="media/overdue.png" />
-					<li>Lifetime Loan Report</li>
-					<img src="media/lifetime.png" />
-					<li>Asset Checkout Frequency Report</li>
-					<img src="media/frequentCheckouts.png" />
+					<li>
+						<div>
+							<p>Overdue Report</p>
+							<img class="img-fluid" src="media/overdue.png" alt="Overdue">
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>Lifetime Loan Report</p>
+							<img class="img-fluid" src="media/lifetime.png" alt="Lifetime">
+						</div></li>
+					<li>
+						<div>
+							<p>Asset Checkout Frequency Report</p>
+							<img class="img-fluid" src="media/frequentCheckouts.png" alt="Frequent Checkouts">
+						</div>
+					</li>					
 				</ul>
 			</li>
 		</ol>
 	</div>
 </body>
-
-<link rel="stylesheet" href="/styles.css" />
-
-<style>
-	img {
-		max-width: 800px;
-		max-height: 500px;
-		border: solid;
-		border-color: black;
-		border-width: 2px;
-		margin: 15px 0 15px 0;
-	}
-</style>
+</html>
