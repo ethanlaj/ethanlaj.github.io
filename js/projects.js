@@ -29,6 +29,10 @@
 				href = "/Projects/resell-bot/resell-bot.html";
 				break;
 			}
+			case "techops": {
+				href = "/Projects/techops/techops.html";
+				break;
+			}
 		}
 
 		let githubButton = this.children.namedItem("github");

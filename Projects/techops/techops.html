@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Operations</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/global.css">
+    
+    <script src="../../js/global.js"></script>
+    <link rel="stylesheet" href="../../css/project.css">
+</head>
+
+<body>
+    <div class="padded">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Project List</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Technical Operations</li>
+            </ol>
+        </nav>
+        <h1>Technical Operations</h1>
+        <p>
+            The Technical Operations website is an ASP.NET Core MVC Application using Entity Framework. This is a scheduling website that is used across the Elizabethtown College campus for many events. A limited number of staff members post events on this website along with the number of people needed to work these events. Workers can sign up for a shift on their own once the event is posted.
+        </p>
+        <p>
+            At the time I started this project, authentication was being done through LDAP. Another student developer had started the switch to Microsoft Identity authentication, however has not finished before graduation. I was tasked with finishing the switch and adding many more useful features to the website.
+        </p>
+
+        <h4>Throughout this project I gained experience in:</h4>
+        <ul>
+            <li>C#</li>
+			<li>ASP.NET Core</li>
+			<li>.NET 5</li>
+			<li>MVC</li>
+			<li>JavaScript</li>
+			<li>HTML & CSS</li>
+			<li>SQL & SQL Servers</li>
+			<li>Entity Core Framework</li>
+			<li>Subversion Client - TortoiseSVN</li>
+			<li>FTP Server Publishing</li>
+			<li>Cookies</li>
+            <li>SMTP Servers</li>
+            <li>HTML Emails</li>
+            <li>Scheduled Tasks</li>
+        </ul>
+
+        <h2>Selected Fixes & Improvements:</h2>
+		<ol>
+			<li>Finished switching over to authentication through Microsoft Identity.</li>
+			<li>
+				Emails:
+				<ul>
+					<li>Added in weekly emails that contains the following information:
+                        <ul>
+                            <li>Upcoming Shifts</li>
+                            <li>New Events</li>
+                            <li>Upcoming Open Positions</li>
+                        </ul>
+                    </li>
+					<li>Emails are sent weekly through a scheduled task.
+                        <div style="display: flex">
+                            <img class="img-fluid" style="max-height: 450px" src="media/email1.png" alt="Email Example">
+                            <img class="img-fluid" style="max-height: 450px" src="media/email2.png" alt="Email Example">
+                        </div>
+                    </li>					
+				</ul>
+			</li>
+			<li>
+				Position Groups:
+				<ul>
+					<li>Added the ability to restrict which workers can pick up events.</li>
+					<li>
+						<p>Adding/removing groups to/from workers.</p>
+						<img class="img-fluid" style="max-width: 500px" src="media/addRemoveGroups.gif" alt="Add or Remove Group">
+					</li>
+                    <li>
+                        <p>Worker View</p>
+                        <img class="img-fluid" src="media/workerEventView.png" alt="Worker View">
+                    </li>
+				</ul>
+			</li>
+			<li>
+				Improved Settings View:
+				<ul>
+					<li>
+						<p>Before, the workers, venues, and groups tables were all on the same page. Now, they are all split up into separate pages, which can be accessed by the buttons on the new settings page.</p>
+						<img class="img-fluid" src="media/settings.png" alt="Settings">
+					</li>
+				</ul>
+			</li>
+		</ol>
+    </div>
+</body>
+</html>
