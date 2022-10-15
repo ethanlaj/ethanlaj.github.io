@@ -35,9 +35,11 @@
 			}
 		}
 
-		let githubButton = this.children.namedItem("github");
+		let githubButton = this.querySelector(".github");
 
-		if (!githubButton || !githubButton.matches(':hover'))
+		if (githubButton && githubButton.matches(':hover')) {
+			// do not open project since github button was clicked
+		} else
 			window.location = href;
 	}
 })();

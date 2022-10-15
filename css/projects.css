@@ -1,5 +1,6 @@
 #projects {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	column-gap: 80px;
 	row-gap: 40px;
@@ -18,6 +19,18 @@
 	width: 300px;
 	height: 230px;
 	padding: 20px 20px 0 20px;
+}
+
+.projectRow {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap: 80px;
+	row-gap: 40px;
+}
+
+#projects:first-child {
+	margin-bottom: 40px;
 }
 
 .project-box:hover {
