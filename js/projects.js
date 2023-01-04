@@ -16,30 +16,37 @@
 	 */
 	function openProject() {
 		let href = "";
-		switch (this.id) {
-			case "checkout-system": {
-				href = "/Projects/checkout-system/checkout-system.html";
-				break;
-			}
-			case "amazon-affiliate-bot": {
-				href = "/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html";
-				break;
-			}
-			case "resell-bot": {
-				href = "/Projects/resell-bot/resell-bot.html";
-				break;
-			}
-			case "techops": {
-				href = "/Projects/techops/techops.html";
-				break;
-			}
-		}
 
 		let githubButton = this.querySelector(".github");
 
 		if (githubButton && githubButton.matches(':hover')) {
 			// do not open project since github button was clicked
-		} else
+		} else {
+			switch (this.id) {
+				case "labshare": {
+					return window.open("https://labshare.xyz");
+				}
+				case "checkout-system": {
+					href = "/Projects/checkout-system/checkout-system.html";
+					break;
+				}
+				case "amazon-affiliate-bot": {
+					href = "/Projects/amazon-affiliate-bot/amazon-affiliate-bot.html";
+					break;
+				}
+				case "resell-bot": {
+					href = "/Projects/resell-bot/resell-bot.html";
+					break;
+				}
+				case "techops": {
+					href = "/Projects/techops/techops.html";
+					break;
+				}
+			}
+
 			window.location = href;
+		}
+
+
 	}
 })();
