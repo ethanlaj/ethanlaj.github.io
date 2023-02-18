@@ -23,6 +23,9 @@
 			// do not open project since github button was clicked
 		} else {
 			switch (this.id) {
+				case "couple-trivia": {
+					return window.open("https://youtu.be/99za1ogBe78");
+				}
 				case "labshare": {
 					return window.open("https://labshare.xyz");
 				}
