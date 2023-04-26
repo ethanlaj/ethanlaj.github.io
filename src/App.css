@@ -1,0 +1,22 @@
+:root {
+	--dark-bg-color: #222831;
+	--dark-text-color: #eeeeee;
+	--dark-accent-color: #30475e;
+}
+
+body {
+	background-color: var(--dark-bg-color);
+	color: var(--dark-text-color);
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--dark-accent-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
