@@ -6,8 +6,7 @@
 	 */
 	function init() {
 		let projectBoxes = document.querySelectorAll(".project-box");
-		for (let projectBox of projectBoxes)
-			projectBox.addEventListener("click", openProject);
+		for (let projectBox of projectBoxes) projectBox.addEventListener("click", openProject);
 	}
 
 	/**
@@ -19,10 +18,13 @@
 
 		let githubButton = this.querySelector(".github");
 
-		if (githubButton && githubButton.matches(':hover')) {
+		if (githubButton && githubButton.matches(":hover")) {
 			// do not open project since github button was clicked
 		} else {
 			switch (this.id) {
+				case "yolo-cpp-api": {
+					return window.open("https://github.com/ethanlaj/yolo-cpp-api");
+				}
 				case "couple-trivia": {
 					return window.open("https://youtu.be/99za1ogBe78");
 				}
@@ -49,7 +51,5 @@
 
 			window.location = href;
 		}
-
-
 	}
 })();
