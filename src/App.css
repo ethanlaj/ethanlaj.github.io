@@ -1,7 +1,8 @@
 :root {
-	--dark-bg-color: #222831;
-	--dark-text-color: #eeeeee;
-	--dark-accent-color: #30475e;
+	--dark-bg-color: #1a202c;
+	--dark-text-color: #f1f5f9;
+	--dark-accent-color: #4a5568;
+	--secondary-color: #6798f9;
 }
 
 body {
@@ -18,5 +19,6 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	color: var(--secondary-color);
+	text-decoration: none;
 }

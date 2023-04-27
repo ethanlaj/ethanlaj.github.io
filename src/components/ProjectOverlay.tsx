@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Tool from "./Tool";
 
 interface ProjectOverlayProps {
 	title: string;
 	description: string;
-	link: string;
-	githubLink: string;
+	linkBtnText?: string;
+	link?: string;
+	route?: string;
+	githubLink?: string;
 	tools: string[];
 }
 
@@ -13,7 +16,9 @@ const ProjectOverlay: React.FC<ProjectOverlayProps> = ({
 	title,
 	description,
 	tools,
+	linkBtnText,
 	link,
+	route,
 	githubLink,
 }) => {
 	return (
@@ -30,12 +35,23 @@ const ProjectOverlay: React.FC<ProjectOverlayProps> = ({
 			</div>
 
 			<div className="project-buttons">
-				<a className="project-button" href={link} target="_blank" rel="noopener noreferrer">
-					Visit Website
-				</a>
+				{route ? (
+					<Link to={route} target="_blank" className="project-button">
+						<div>Read More</div>
+					</Link>
+				) : (
+					<a
+						className={`project-button ${link ? "" : "hidden"}`}
+						href={link ?? ""}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{linkBtnText ?? "Visit Website"}
+					</a>
+				)}
 				<a
-					className="project-button"
-					href={githubLink}
+					className={`project-button ${githubLink ? "" : "hidden"}`}
+					href={githubLink ?? ""}
 					target="_blank"
 					rel="noopener noreferrer"
 				>
